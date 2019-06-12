@@ -1,0 +1,22 @@
+html, body{
+	height:100%; 
+	background-color: rgb(227, 240, 245);
+	/* background-image: url("../img/pic2.jpg"); */
+	/* -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover; */
+}
+
+.bordering{
+	border-radius: 10px;
+    background:  rgb(179, 190, 192);
+    padding: 20px;  
+}
+
+.paragraph{
+	font-style: italic;
+	font-weight: 500;
+	font-size: 20px;
+}
+

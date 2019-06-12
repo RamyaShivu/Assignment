@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Culinary Institute</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/styling.css">
+</head>
+
+<body onload="getFromSession()">
+	<!-- Insert nav bar here-->
+	<header>
+	<nav class="navbar navbar-expand-md bg-secondary navbar-dark">
+		<a class="navbar-brand" href="index.html">Infy Culinary Institute</a>
+	</nav>
+	</header>	
+	<br>
+	<section class="container-fluid">
+		<!-- Write your code -->
+		<div class="row">
+			<div class="col-md-6 offset-3">
+				<div class="card">
+					<div class="card-header">
+						<h4 id="type"></h4>  <!--given in To trainee-->
+					</div>
+					<div class="card-body">
+					<h6>List of cuisines for this group of class</h6>
+					<ul id="list"></ul> <!--given in To trainee-->
+					<form onsubmit="register(event)">
+							<div class="form-group">
+								<label for="name">Student name:</label>
+								<input type="text" id="name" class="form-control" minlength="5" required placeholder="Enter your name" onblur="checkName()">
+								<div id="nameError" class="text-danger"></div>
+							</div>
+							<div class="form-group">
+								<label for="age">Age:</label>
+								<input type="number" id="age" class="form-control" min="18" max="60" onkeyup="checkAge()" required placeholder="Above 18 years and below 60 years old">
+								<div class="text-danger" id="ageError"></div>
+							</div>
+							<div class="form-group">
+								<label for="city">Check available city:</label>
+								<input type="text" id="city" class="form-control" min="18" max="60" onkeyup="changeToUpper()" onblur="checkCity()" required placeholder="Enter your city">
+								<div class="text-danger" id="cityError"></div>
+							</div>
+		
+							<button class="btn btn-info" type="submit" id="btn" disabled>Register</button>
+							<div id="successMessage" class="text-success"></div>
+						</form>
+					</div>
+				</div>
+				
+			
+			</div>
+		</div>
+				
+			
+
+	</section>
+	<script src="js/Register.js"></script>
+	<!-- Do not remove the below lines -->
+	<script src="utilities/jquery.js"></script>
+	<script src="utilities/register-verify.js"></script>
+</body>
+</html>

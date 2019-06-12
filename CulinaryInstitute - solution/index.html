@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Culinary Institute</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/styling.css">
+	<script src="./js/index.js"></script>
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-expand-md bg-secondary navbar-dark">
+			<a class="navbar-brand" href="#">Infy Culinary Institute</a>
+		</nav>
+	</header>
+	<br>
+	<section class="container-fluid">
+		<h1 class="text-center text-secondary">Welcome to Culinary Institute</h1><br>
+		<div class="row">
+			<div class="col-md-10 offset-md-1 paragraph">
+				<p class="text-center " >If you’ve ever wanted to learn more about cuisine and how your creativity and appreciation can be expressed by preparing food, this palce is perfect for you. 
+				Learn the fundamentals of a working kitchen!</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 offset-md-4">
+				<form>
+					<div class="form-group">
+						<label for="interest">What are you interested in:</label>
+						<select id="interest" class="form-control" onchange="store()" required>
+							<option selected disabled value="">Type of class</option>
+							<option value="healthy">Nutrition cooking class</option>
+							<option value="desserts">Desserts cooking class</option>
+							<option value="regulars">Regular Veg/Non-veg cooking class</option>
+						</select>
+						<br>
+						<div class="text-center">
+							<a href="register.html"><button type="button" id="indexButton" class="btn btn-secondary" disabled>Register here</button></a>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+	<br>
+	<br>
+	<br>
+	<br>
+	<footer>
+		<div class="row">
+			<div class="col-md-8 offset-md-2">
+				<h6 class="text-center">We opearte at</h6>
+				<h5 class="text-center">Chennai | Delhi | Pune | Bangalore | Hyderabad</h5>
+			</div>
+		</div>
+	</footer>
+	
+	
+
+</body>
+	<!-- Do not remove the below lines -->
+	<script src="utilities/jquery.js"></script>
+	<script src="utilities/index-verify.js"></script>
+</html>
